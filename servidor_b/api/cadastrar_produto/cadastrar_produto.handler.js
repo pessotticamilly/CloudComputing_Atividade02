@@ -4,7 +4,7 @@ const listaProdutos = [];
 async function cadastrar_produto(dados) {
     let loginValido = false;
 
-    const res = await fetch('http://destino:3000/api/login', {
+    const res = await fetch('http://localhost:3000/api/login', {
         method: 'post',
         body: JSON.stringify(dados),
         headers: { 'Content-Type': 'application/json' },
